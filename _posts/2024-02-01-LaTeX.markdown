@@ -3,6 +3,7 @@ layout: post
 title:  LaTeX
 date:   2024-02-01 01:00:00 +0000
 categories: LaTeX
+tags: latex
 math: true
 ---
 | Текст     | Результат        |

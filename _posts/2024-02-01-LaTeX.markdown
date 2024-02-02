@@ -7,7 +7,9 @@ tags: latex
 math: true
 ---
 
-Источник [Бауманский университет](http://fn.bmstu.ru/data-physics/library/physbook/tom2/ch1/texthtml/ch1_5.htm)
+Источник - "Бауманский университет"
+
+`fn.bmstu.ru/data-physics/library/physbook/tom2/ch1/texthtml/ch1_5.htm`
 
 
 # Первый закон термодинамики

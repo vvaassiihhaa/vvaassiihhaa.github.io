@@ -131,3 +131,11 @@ $$ Q = \nu R \, \Delta T + \frac { i }{ 2 } \nu R \, \Delta T = \nu R \, \Delta 
 Это значение количества теплоты $$Q$$ подставляем в молярную теплоёмкость $$ C_p = \frac { Q } { \nu \, \Delta T } $$
 
 $$ C_p = \frac { \nu R \, \Delta T }{ \nu \, \Delta T } \, \left( 1 + \frac { i }{ 2 } \right) = R \left( 1 + \frac { i }{ 2 } \right) = \frac { i + 2 } { 2 } \, R $$
+
+Итак, запишем ещё раз наши результаты для изохорной и изобарной теплоёмкости
+
+$$ C_V = \frac { i }{ 2 } R $$ 
+
+$$ C_p = \frac { i + 2 } { 2 } \, R = \frac { i }{ 2 } R + R $$
+
+$$ C_p = C_V + R $$

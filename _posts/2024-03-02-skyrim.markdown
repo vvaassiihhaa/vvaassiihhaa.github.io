@@ -1,0 +1,17 @@
+---
+layout: post
+title:  Skyrim
+date:   2024-03-02 01:00:00 +0000
+categories: skyrim
+tags: skyrim
+---
+
+Источник `http://uit.mpei.ru/git/main/cs`
+
+# CodeBlocks 
+
+Кодеблокс - это свободная среда разработки
+
+[wiki/Code::Blocks](https://ru.wikipedia.org/wiki/Code::Blocks)
+
+`apt-get install gcc codeblocks`

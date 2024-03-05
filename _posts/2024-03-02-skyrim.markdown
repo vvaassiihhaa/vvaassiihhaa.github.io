@@ -61,3 +61,15 @@ vector<float> numbers{ 1, 2, 3, 4, 5 };
 ```
 
 В этом типе данных нет необходимости следить за памятью - она будет освобождена автоматически
+
+# CodeBlocks for Windows 
+
+Вернёмся к установке программы кодеблокс 
+
+[wiki.codeblocks Установка для Windows](https://wiki.codeblocks.org/index.php/Installing_the_latest_official_version_of_Code::Blocks_on_Windows)
+
+`https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03mingw-setup.exe`
+
+`https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03mingw-setup.exe`
+
+Я написал ссылку 2 раза, чтобы подчеркнуть, что нам нужна не просто программа **кодеблокс** но и **mingw** ( Minimalist GNU for Windows )

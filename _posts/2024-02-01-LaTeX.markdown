@@ -7,6 +7,8 @@ tags: latex
 math: true
 ---
 
+$$ \forall $$
+
 Источник - "Бауманский университет"
 
 `fn.bmstu.ru/data-physics/library/physbook/tom2/ch1/texthtml/ch1_5.htm`

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Проверка ввода</title>
+</head>
+<body>
+  <h1>3. Найди подсказку в Lounge зоне <br><br>
+Из стекла или фарфора,  <br>
+А вокруг неё приборы.  <br>
+Она – столовая посуда,  <br>
+И нужна она повсюду.  <br><br>
+Введите 4-ю букву слова</h1>
+
+  <form id="myForm">
+    <label for="textInput">Введите текст:</label>
+    <input type="text" id="textInput" name="textInput">
+    <button type="button" onclick="checkInput()">Отправить</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script>
+    function checkInput() {
+      var inputText = document.getElementById('textInput').value;
+
+      if (inputText.toLowerCase() === 'е') {
+        document.getElementById('message').innerHTML = 'Правильно ! Молодцы !!!';
+        // Создаем ссылку на другой HTML файл
+        var link = document.createElement('a');
+        link.href = 'pp.html';
+        link.textContent = 'Перейти к другому файлу ( Собери пазл )';
+        document.body.appendChild(link);
+      } else {
+        document.getElementById('message').innerHTML = 'Попробуй ещё раз или возьми подсказку';
+      }
+    }
+  </script>
+</body>
+</html>

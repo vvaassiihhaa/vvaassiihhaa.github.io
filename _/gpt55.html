@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Проверка ввода</title>
+<style>
+  @font-face {
+    font-family: 'Philosopher';
+    src: url('Philosopher-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .philosopher-regular {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+</style>
+</head>
+<body>
+  <h1 class="philosopher-regular">5. Кто спрятался на картинке <br><br>
+  
+  <!-- Замените ссылку на картинку jj.jpeg на вашу ссылку -->
+  <img src="jj.jpeg" alt="Картинка"> <br><br>
+
+Введите 2-ю букву слова</h1>
+
+  <form id="myForm">
+    <label for="textInput" class="philosopher-regular">Введите текст:</label>
+    <input type="text" id="textInput" name="textInput" class="philosopher-regular">
+    <button type="button" onclick="checkInput()" class="philosopher-regular">Отправить</button>
+  </form>
+
+  <p id="message" class="philosopher-regular"></p>
+
+  <script>
+    function checkInput() {
+      var inputText = document.getElementById('textInput').value;
+
+      if (inputText.toLowerCase() === 'о') {
+        document.getElementById('message').innerHTML = 'Правильно ! Молодцы !!!';
+        // Создаем ссылку на другой HTML файл
+        var link = document.createElement('a');
+        link.href = 'pp.html';
+        link.textContent = 'Перейти к другому файлу ( Собери пазл )';
+        document.body.appendChild(link);
+      } else {
+        document.getElementById('message').innerHTML = 'Попробуй ещё раз или возьми подсказку';
+      }
+    }
+  </script>
+</body>
+</html>

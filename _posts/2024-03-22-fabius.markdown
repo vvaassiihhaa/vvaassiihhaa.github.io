@@ -1,0 +1,9 @@
+---
+layout: post
+title:  Фабиус. Первые шаги
+date:   2024-03-22 01:00:00 +0000
+categories: fabius
+tags: fabius
+---
+
+Добрый день, дорогие друзья

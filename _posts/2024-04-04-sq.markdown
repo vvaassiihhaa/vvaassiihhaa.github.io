@@ -23,3 +23,52 @@ int main(void) {
   return 0;
 }
 ```
+
+# Деление по модулю
+
+Операция % возвращает остаток от деления ( только целые числа )
+
+```c
+#include <stdio.h>
+ 
+int main( void ) {
+  int res = 10 % 3;
+  printf( "res = %d\n", res );
+ 
+  return 0;
+}
+```
+
+Эту операцию удобно использовать для определения чётности
+```c
+#include <stdio.h>
+
+int main( void ) {
+  int digit;
+  scanf( "%d", &digit );
+
+  int res = digit % 2; 
+  printf( "res = %d\n", res );     
+
+  return 0;
+}
+```
+
+Или можно хранить время в секундах ( как в UNIX )
+
+```c
+#include <stdio.h>
+int main( void ) {
+  unsigned int time = 4 * 3600 + 32 * 60 + 18;
+
+  unsigned int sec  = time % 60;
+  unsigned int min  = ( time / 60 ) % 60;
+  unsigned int hour = time / 3600; 
+
+  printf( "%02d:%02d:%02d\n", hour, min, sec );  
+
+  return 0;
+}
+```
+
+

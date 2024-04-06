@@ -118,3 +118,23 @@ int main( void ) {
     return 0;
 }
 ```
+
+# Скорость
+
+Ввести с клавиатуры показатель скорости в метрах в секунду
+
+И перевести этот показатель в км/час 
+
+1 км/ч = 1000/3600 м/с
+
+```c
+#include <stdio.h>
+
+int main( void ) {
+    int speedms;
+    scanf( "%d", &speedms );
+    printf( "%.1f", speedms * 3.6 );
+    
+    return 0;
+}
+```

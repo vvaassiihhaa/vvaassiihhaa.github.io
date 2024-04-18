@@ -1,0 +1,29 @@
+---
+layout: post
+title:  LANG_C
+date:   2024-04-18 01:00:00 +0000
+categories: c
+tags: c
+---
+
+```c
+#define LANG_C
+ 
+#if defined(LANG_C)
+#   include <stdio.h>
+#else
+#   include <iostream>
+#endif
+ 
+int main(void)
+{
+         int x=5;
+#ifdef LANG_C
+         printf("%d\n", x);
+#else
+         std::cout << x << std::endl;
+#endif
+ 
+    return 0;
+}
+```

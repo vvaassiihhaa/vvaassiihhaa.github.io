@@ -6,6 +6,25 @@ categories: c
 tags: c
 ---
 
+# while
+
+```c
+#include <stdio.h>
+
+int main( void ) {
+  int s = 0, x = 1;
+
+  while( scanf( "%d", &x ) == 1 && x != 0 )
+    s += x;
+
+  printf( "s = %d\n", s );
+
+  return 0;
+}
+```
+
+# Условная компиляция
+
 ```c
 #define LANG_C
  
@@ -15,7 +34,7 @@ tags: c
 #   include <iostream>
 #endif
  
-int main(void)
+int main( void )
 {
          int x=5;
 #ifdef LANG_C

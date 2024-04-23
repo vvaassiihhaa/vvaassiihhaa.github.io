@@ -6,6 +6,8 @@ categories: c
 tags: c
 ---
 
+Источник `https://proproprogs.ru/c_base/c_ukazateli-proshche-prostogo`
+
 # Указатели
 
 ```c

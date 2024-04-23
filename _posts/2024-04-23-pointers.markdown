@@ -1,0 +1,27 @@
+---
+layout: post
+title:  pointers
+date:   2024-04-23 01:00:00 +0000
+categories: c
+tags: c
+---
+
+# Указатели
+
+```c
+#include <stdio.h>
+ 
+int main(void) 
+{
+         char d = 10;
+         char *gpt;
+         gpt = &d;
+ 
+         printf("gpt = %p, *gpt = %d, d = %d\n", gpt, *gpt, d);
+         
+         *gpt = 100;
+         printf("gpt = %p, *gpt = %d, d = %d\n", gpt, *gpt, d);
+ 
+         return 0;
+}
+```

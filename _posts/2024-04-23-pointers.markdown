@@ -49,3 +49,22 @@ int main(void)
          return 0;
 }
 ```
+
+и ещё
+
+```c
+#include <stdio.h>
+ 
+int main(void) 
+{
+         int g = 476789;
+         char *ptr = (char *)&g;
+ 
+         for(int i = 0;i < sizeof(g); ++i) {
+                   printf("%d ", *ptr);
+                   ptr++;
+         }
+ 
+         return 0;
+}
+```

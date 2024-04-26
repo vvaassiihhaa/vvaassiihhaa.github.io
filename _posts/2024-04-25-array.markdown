@@ -53,3 +53,18 @@ int main(void)
     return 0;
 }
 ```
+
+# Тип size_t. Подсчёт количества элементов
+
+```c
+#include <stdio.h>
+
+int main ( void ) {
+	size_t bytes_marks = sizeof( marks );
+	size_t len_marks = bytes_marks / sizeof( marks[ 0 ] );
+	
+	printf( "%zu zu", len_marks, bytes_marks );
+	
+	return 0;
+}
+```

@@ -41,3 +41,15 @@ int main(void)
 }
 ```
 
+Размер массива ( количество элементов и байт )
+
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    printf( "%zu %zu\n", sizeof( marks ) / sizeof( *marks ), sizeof( marks ) );
+
+    return 0;
+}
+```

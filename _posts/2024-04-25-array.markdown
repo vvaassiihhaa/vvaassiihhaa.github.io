@@ -85,3 +85,48 @@ int main ( void ) {
 for( int i = 0; i < sizeof( ar ) / sizeof( *ar ); ++i )
   printf( "%d ", *( ar + i ) );
 ```
+
+# copy
+
+```c
+#include <stdio.h>
+
+// Функция для копирования массива source в массив destination
+// sizeSource - размер исходного массива, sizeDestination - размер целевого массива
+void copyArray(int source[], int destination[], int sizeSource, int sizeDestination) {
+    // Определяем минимальный размер для копирования
+    int minSize = (sizeSource < sizeDestination) ? sizeSource : sizeDestination;
+    
+    for (int i = 0; i < minSize; i++) {
+        destination[i] = source[i];
+    }
+}
+
+int main() {
+    // Определим исходный массив
+    int sourceArray[] = {1, 2, 3, 4, 5};
+    // Определим массив, в который будем копировать
+    int destinationArray[3]; // Пусть размер целевого массива будет меньше исходного
+
+    // Вычисляем размеры массивов
+    int sizeSource = sizeof(sourceArray) / sizeof(sourceArray[0]);
+    int sizeDestination = sizeof(destinationArray) / sizeof(destinationArray[0]);
+
+    // Копируем массив
+    copyArray(sourceArray, destinationArray, sizeSource, sizeDestination);
+
+    // Выводим исходный массив
+    printf("Исходный массив: ");
+    for (int i = 0; i < sizeSource; i++) {
+        printf("%d ", sourceArray[i]);
+    }
+
+    // Выводим скопированный массив
+    printf("\nСкопированный массив: ");
+    for (int i = 0; i < sizeDestination; i++) {
+        printf("%d ", destinationArray[i]);
+    }
+
+    return 0;
+}
+```

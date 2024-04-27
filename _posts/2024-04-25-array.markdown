@@ -130,3 +130,56 @@ int main() {
     return 0;
 }
 ```
+
+# insert
+
+```c
+#include <stdio.h>
+
+#define TOTAL_MARKS 100
+
+int main() {
+int marks[TOTAL_MARKS];
+int num_elements = 0; // текущее количество элементов в массиве
+int value, position, i;
+
+// Предположим, что массив уже содержит некоторые значения, и num_elements их количество
+// Здесь должен быть код для инициализации массива marks и переменной num_elements
+
+// Чтение значения и позиции для вставки
+printf("Введите значение для вставки: ");
+scanf("%d", &value);
+printf("Введите позицию для вставки: ");
+scanf("%d", &position);
+
+// Проверка, достаточно ли места в массиве для вставки
+if (num_elements >= TOTAL_MARKS) {
+printf("В массиве нет места для вставки нового элемента.\n");
+return -1;
+}
+
+// Проверка корректности введенной позиции
+if (position < 0 || position > num_elements) {
+printf("Некорректная позиция для вставки.\n");
+return -1;
+}
+
+// Сдвиг элементов для освобождения места для нового элемента
+for (i = num_elements; i > position; i--) {
+marks[i] = marks[i - 1];
+}
+
+// Вставка элемента
+marks[position] = value;
+num_elements++; // Увеличиваем количество элементов после вставки
+
+// Вывод массива после вставки
+printf("Массив после вставки:\n");
+for (i = 0; i < num_elements; i++) {
+printf("%d ", marks[i]);
+}
+printf("\n");
+
+return 0;
+}
+```

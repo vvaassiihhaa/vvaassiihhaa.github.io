@@ -330,3 +330,22 @@ int main(void)
          return 0;
 }
 ```
+
+# strchr
+
+```c
+#include <stdio.h>
+#include <string.h>
+ 
+int main(void) 
+{
+         char str[] = "Abrakadabra";
+         char *ptr = strchr(str, 'a');
+         
+         printf("str = %p\nptr = %p\n", str, ptr);
+         if(ptr != NULL)
+                   printf("*ptr = %c\n", *ptr);
+ 
+         return 0;
+}
+```

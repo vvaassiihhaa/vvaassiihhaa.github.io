@@ -254,3 +254,29 @@ int main ( void ) {
 
 // https://stepik.org/lesson/1191295/step/6?discussion=9121391&thread=solutions&unit=1204283
 ```
+
+# copy 2
+
+Источник `https://proproprogs.ru/c_base/c_strokovye-funkcii-strlen-strcpy-strncpy-strcat-strncat`
+
+```c
+#include <stdio.h>
+ 
+int main(void) 
+{
+         char source[100] = "Source string";
+         char destination[10];
+ 
+         const char* src = source;
+         char* dst = destination;
+         int max_len_copy = sizeof(destination);
+ 
+         while(*src != '\0' && max_len_copy-- > 1)
+                   *dst++ = *src++;
+         *dst = '\0';
+ 
+         puts(destination);
+         
+         return 0;
+}
+```

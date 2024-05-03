@@ -7,3 +7,25 @@ tags: c
 ---
 
 Источник `https://proproprogs.ru/c_base/c_vvod-vyvod-strok-v-standartnye-potoki`
+
+# Функция puts()
+
+Эта функция определена в файле `<stdio.h>`
+
+Она работает быстрее, чем функция **printf()**
+
+```c
+char str[] = { 'B', 'a', 'l', 'a', 'k', 'i', 'r', 'e', 'v', '\0' };
+puts( str );
+```
+
+# Функция fgets()
+
+`char* fgets(char* buf, int max_len, FILE* stream);`
+
+```c
+char bf[ 10 ];
+fgets( bf, sizeof( bf ), stdin ); // читаем данные из входного потока 
+```
+
+Функция fgets формирует корректную строку, то есть, автоматически добавляет символ конца строки после последнего прочитанного символа `/0` 

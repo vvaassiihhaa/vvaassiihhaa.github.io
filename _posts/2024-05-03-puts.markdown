@@ -6,6 +6,9 @@ categories: c
 tags: c
 ---
 
+![Текст](/Images/photo.jpg)
+
+
 Источник `https://proproprogs.ru/c_base/c_vvod-vyvod-strok-v-standartnye-potoki`
 
 # Функция puts()

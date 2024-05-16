@@ -6,6 +6,27 @@ categories: c
 tags: c
 ---
 
+# malloc 
+
+`void *malloc( size_t size );`
+
+```c
+#include <stdlib.h>
+
+int main() {
+    int *ptr;
+    ptr = (int*)malloc( sizeof( int ) ); // Выделение памяти под один int
+    if (ptr == NULL) {
+        // Обработка ошибки выделения памяти
+    } else {
+        // Использование выделенной памяти
+        *ptr = 10;
+    }
+    free(ptr); // Освобождение выделенной памяти
+    return 0;
+}
+```
+
 # while
 
 ```c
